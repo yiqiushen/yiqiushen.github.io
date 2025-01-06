@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.bc894edb.css",
-    "main.js": "/static/js/main.c8782599.js",
+    "main.js": "/static/js/main.e9fc1fd8.js",
     "static/js/488.143d08ca.chunk.js": "/static/js/488.143d08ca.chunk.js",
     "static/media/headshot.jpg": "/static/media/headshot.9ea41220f2298bb1d8d5.jpg",
     "static/media/marathon.JPG": "/static/media/marathon.df3fb1406d13faa15282.JPG",
     "index.html": "/index.html",
     "main.bc894edb.css.map": "/static/css/main.bc894edb.css.map",
-    "main.c8782599.js.map": "/static/js/main.c8782599.js.map",
+    "main.e9fc1fd8.js.map": "/static/js/main.e9fc1fd8.js.map",
     "488.143d08ca.chunk.js.map": "/static/js/488.143d08ca.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.bc894edb.css",
-    "static/js/main.c8782599.js"
+    "static/js/main.e9fc1fd8.js"
   ]
 }
