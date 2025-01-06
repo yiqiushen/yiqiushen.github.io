@@ -2,7 +2,7 @@
   "name": "cv-website",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://yiqiushen.github.io/cv-website",
+  "homepage": "https://yiqiushen.github.io",
   "dependencies": {
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
