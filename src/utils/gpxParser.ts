@@ -12,7 +12,7 @@ export function parseGPX(gpxString: string): { points: GPXPoint[], geojson: any 
   const xmlDoc = parser.parseFromString(gpxString, "text/xml");
   
   // Convert to GeoJSON
-  const geojson = gpx(xmlDoc);
+  const geojson = gpx(xmlDoc as unknown as Document);
   
   // Extract points
   const points: GPXPoint[] = [];
