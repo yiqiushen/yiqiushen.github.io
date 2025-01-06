@@ -1,4 +1,4 @@
-import { gpx } from '@mapbox/togeojson';
+import { gpx } from '@tmcw/togeojson';
 import { DOMParser } from '@xmldom/xmldom';
 
 interface GPXPoint {
