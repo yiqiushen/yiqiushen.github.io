@@ -13,7 +13,7 @@ const educationData: EducationEntry[] = [
   {
     school: "University of Southern California, Los Angeles, California",
     degree: "Ph.D. Statistics",
-    period: "Aug 2019 - Present, Expected May 2025",
+    period: "Aug 2019 - July 2025",
     details: [
       "GPA: 3.96",
       "Field of Interest: High Dimensional and Robust Statistics, Statistical Learning Theory",

@@ -18,6 +18,7 @@ const Home: React.FC = () => {
   const [randomSkill, setRandomSkill] = useState<string>('');
   const [showSkill, setShowSkill] = useState<boolean>(false);
   const [showSkillDetails, setShowSkillDetails] = useState<boolean>(false);
+  const [showResume, setShowResume] = useState<boolean>(false);
 
   const getRandomSkill = () => {
     const allSkills = Object.values(skillsData).flat() as string[];
@@ -72,15 +73,38 @@ const Home: React.FC = () => {
         About Me
       </Typography>
       <Typography variant="body1" paragraph>
-        I am a 6th year Ph.D. student in Statistics at the Department of Data Sciences and Operations at Marshall School of Business at USC. My research interests are in high-dimensional statistics and statistical learning theory. My advisor is Dr. Stanislav Minsker. If you are interested in my projects or my work at Delphire, please feel free to send me an email.
+        I obtained my Ph.D. in Statistics at the Department of Data Sciences and Operations at Marshall School of Business at USC. My research interests are in high-dimensional statistics and statistical learning theory. My advisor is Dr. Stanislav Minsker. If you are interested in my projects or my work at Delphire, please feel free to send me an email.
       </Typography>
       <Typography variant="body1" paragraph>
-        Prior to graduate school, I received my undergraduate degree in Applied and Computational Mathematics from the Department of Mathematics at USC.
+        Prior to graduate school, I obtained my bachelor's degree in Applied and Computational Mathematics at USC. 
       </Typography>
       <Typography variant="body1" paragraph>
-        My Erdős number is 4. 
+        <Link href="#" onClick={(e) => { e.preventDefault(); setShowResume(true); }} sx={{ cursor: 'pointer' }}>
+          Click here for my resume
+        </Link>
       </Typography>
     </Paper>
+
+    <Dialog
+      open={showResume}
+      onClose={() => setShowResume(false)}
+      maxWidth="md"
+      fullWidth
+    >
+      <DialogTitle>My Resume</DialogTitle>
+      <DialogContent>
+        <iframe 
+          src="/cv.pdf" 
+          width="100%" 
+          height="600px"
+          style={{ border: 'none' }}
+          title="Resume"
+        />
+      </DialogContent>
+      <DialogActions>
+        <Button onClick={() => setShowResume(false)}>Close</Button>
+      </DialogActions>
+    </Dialog>
   </Box>
 </Box>
 
@@ -152,6 +176,11 @@ const Home: React.FC = () => {
               >
                 I am Feeling Lucky
               </Button>
+              <Typography variant="body2" sx={{ mt: 1, textAlign: 'center' }}>
+                <Link href="skills" color="primary">
+                  View full skills list
+                </Link>
+              </Typography>
               {showSkill && (
                 <>
                   <Chip
