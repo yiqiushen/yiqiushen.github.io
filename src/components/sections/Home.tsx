@@ -50,7 +50,7 @@ const Home: React.FC = () => {
     <Paper elevation={1} sx={{ p: 3, mb: 3 }}>
       <Typography variant="h4" gutterBottom sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
         Yiqiu Shen
-        <Link href="mailto:yiqiushe@usc.edu" underline="hover">
+        <Link href="mailto:yiqiushen2025@gmail.com" underline="hover">
           <EmailIcon fontSize="medium" sx={{ color: 'text.secondary' }} />
         </Link>
         <Link href="https://www.linkedin.com/in/yiqiu-shen-b6a1901b6/" target="_blank" rel="noopener noreferrer">
