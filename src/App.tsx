@@ -1,5 +1,5 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route, useNavigate } from 'react-router-dom';
 import { Box, CssBaseline, ThemeProvider as MuiThemeProvider } from '@mui/material';
 import { ThemeProvider } from './ThemeContext';
 import { lightTheme, darkTheme } from './theme';
@@ -53,10 +53,24 @@ const App: React.FC = () => {
   return (
     <ThemeProvider>
       <Router>
-        <AppContent />
+        <AppWithRedirectHandler />
       </Router>
     </ThemeProvider>
   );
+};
+
+const AppWithRedirectHandler: React.FC = () => {
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const redirectPath = sessionStorage.redirect;
+    if (redirectPath) {
+      delete sessionStorage.redirect;
+      navigate(redirectPath);
+    }
+  }, [navigate]);
+
+  return <AppContent />;
 };
 
 export default App;
