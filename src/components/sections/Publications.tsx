@@ -12,6 +12,13 @@ interface Publication {
 
 const publicationsData: Publication[] = [
   {
+    title: "Minimax Supervised Clustering in the Anisotropic Gaussian Mixture Model",
+    year: "2025",
+    authors: "Minsker, Stanislav, Mohamed Ndaoud, and Shen, Yiqiu",
+    reference: "Journal of Machine Learning Research. To appear",
+    abstract: "We study the supervised clustering problem under the two-component anisotropic Gaussian mixture model in high dimensions and in the non-asymptotic setting. We first derive a lower and a matching upper bound for the minimax risk of clustering in this framework. We also show that in the high-dimensional regime, the linear discriminant analysis (LDA) classifier turns out to be sub-optimal in the minimax sense. Next, we characterize precisely the risk of ℓ2-regularized supervised least squares classifiers. We deduce the fact that the interpolating solution may outperform the regularized classifier, under mild assumptions on the covariance structure of the noise. Our analysis also shows that interpolation can be robust to corruption in the covariance of the noise when the signal is aligned with the \"clean\" part of the covariance, for the properly defined notion of alignment. To the best of our knowledge, this peculiar phenomenon has not yet been investigated in the rapidly growing literature related to interpolation. We conclude that interpolation is not only benign but can also be optimal, and in some cases robust."
+  }, 
+  {
     title: "The Impact of Contamination and Correlated Design on the Lasso",
     year: "2024",
     authors: "Minsker, Stanislav and Shen, Yiqiu",
@@ -24,13 +31,6 @@ const publicationsData: Publication[] = [
     authors: "Jirak, Moritz, Stanislav Minsker, Shen, Yiqiu, and Martin Wahl",
     reference: "Submitted to Probability and Related Fields. Minor revision",
     abstract: "We prove Fuk-Nagaev and Rosenthal-type inequalities for the sums of independent random matrices, focusing on the situation when the norms of the matrices possess finite moments of only low orders. Our bounds depend on the \"intrinsic\" dimensional characteristics such as the effective rank, as opposed to the dimension of the ambient space. We illustrate the advantages of such results in several applications, including new moment inequalities for sample covariance matrices and the corresponding eigenvectors of heavy-tailed random vectors. Moreover, we demonstrate that our techniques yield sharpened versions of the moment inequalities for empirical processes."
-  },
-  {
-    title: "Minimax Supervised Clustering in the Anisotropic Gaussian Mixture Model",
-    year: "2021",
-    authors: "Minsker, Stanislav, Mohamed Ndaoud, and Shen, Yiqiu",
-    reference: "Submitted to Journal of Machine Learning Research. Minor revision",
-    abstract: "We study the supervised clustering problem under the two-component anisotropic Gaussian mixture model in high dimensions and in the non-asymptotic setting. We first derive a lower and a matching upper bound for the minimax risk of clustering in this framework. We also show that in the high-dimensional regime, the linear discriminant analysis (LDA) classifier turns out to be sub-optimal in the minimax sense. Next, we characterize precisely the risk of ℓ2-regularized supervised least squares classifiers. We deduce the fact that the interpolating solution may outperform the regularized classifier, under mild assumptions on the covariance structure of the noise. Our analysis also shows that interpolation can be robust to corruption in the covariance of the noise when the signal is aligned with the \"clean\" part of the covariance, for the properly defined notion of alignment. To the best of our knowledge, this peculiar phenomenon has not yet been investigated in the rapidly growing literature related to interpolation. We conclude that interpolation is not only benign but can also be optimal, and in some cases robust."
   }
 
 ];
